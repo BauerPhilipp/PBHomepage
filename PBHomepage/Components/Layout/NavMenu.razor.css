@@ -1,4 +1,24 @@
 .navContainer{
     display:flex;
-    justify-content:space-around;
+    justify-content:normal;
+    background-color:purple;
+}
+
+.centerNavItem {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: blue;
+}
+
+.leftNavItem {
+    width: 5rem;
+    height: 5rem;
+    background-image: url('../../wwwroot/images/navbar/C#.png')
+}
+
+.rightNavItem {
+    width: 5rem;
+    height: 5rem;
+    background-color: black;
 }

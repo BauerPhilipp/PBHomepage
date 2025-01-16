@@ -2,8 +2,15 @@
 
 @inject NavigationManager NavManager
 
-<div class="btn btn-primary" @onclick=@(()=> NavManager.NavigateTo("/Cooking") )>Ein Button</div>
+<div class="container">
+    <div class="image"></div>
+    <div class="descripiton"></div>
+</div>
 
 @code {
+    [Parameter]
+    public string ButtonText { get; set; } = "NoTextSet!";
 
+    [Parameter]
+    public string NavigationLink { get; set; } = "/";
 }
