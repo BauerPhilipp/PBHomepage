@@ -1,7 +1,7 @@
 .navContainer{
     display:flex;
     justify-content:normal;
-    background-color:purple;
+    border-bottom: 2px solid black;
 }
 
 .centerNavItem {
@@ -14,7 +14,11 @@
 .leftNavItem {
     width: 5rem;
     height: 5rem;
-    background-image: url('../../wwwroot/images/navbar/C#.png')
+    background-image: url('images/navbar/csharp.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position:center;
+    border-radius: 50%;
 }
 
 .rightNavItem {

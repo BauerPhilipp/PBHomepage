@@ -2,14 +2,16 @@
 
 @inject NavigationManager NavManager
 
-<div class="container">
-    <div class="image"></div>
-    <div class="descripiton"></div>
+<div class="buttonContainer">
+    <div class="buttonImage" style="background-image:url(images/navbar/blenderLogoTest.png)"></div>
+    <div class="buttonDescripiton">@ButtonText</div>
 </div>
 
 @code {
     [Parameter]
     public string ButtonText { get; set; } = "NoTextSet!";
+    [Parameter]
+    public string ImageLink { get; set; } = string.Empty;
 
     [Parameter]
     public string NavigationLink { get; set; } = "/";
