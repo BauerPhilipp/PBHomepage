@@ -2,28 +2,42 @@
     display:flex;
     justify-content:normal;
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-    align-content:center;
 }
 
 .centerNavItem {
     display: flex;
-    justify-content: center;
+    justify-content:flex-start;
     width: 100%;
     background-color: none;
 }
 
 .leftNavItem {
+    display:none;
+    margin-left: 1rem;
     width: 5rem;
     height: 5rem;
-    background-image: url('images/navbar/csharp.png');
-    background-size:contain;
+    background-image: url('images/navbar/dragonBoy.png');
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
     border-radius: 50%;
+    align-self: center;
 }
 
 .rightNavItem {
+    display:none;
+    margin-right: 1rem;
     width: 5rem;
     height: 5rem;
-    background-color: black;
+    background-image: url('images/navbar/dragonGirl.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    align-self: center;
+}
+
+@media(min-width : 800px){
+    .rightNavItem{display:block;}
+    .leftNavItem{display:block;}
 }
