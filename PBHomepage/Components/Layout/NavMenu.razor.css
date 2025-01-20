@@ -8,7 +8,7 @@
 .centerNavItems {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
     background-color: none;
 }
