@@ -1,39 +1,39 @@
 .navContainer{
+    width: 100vw;
     display:flex;
     justify-content:normal;
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-.centerNavItem {
+.centerNavItems {
     display: flex;
-    justify-content:flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     width: 100%;
     background-color: none;
 }
 
 .leftNavItem {
-    display:none;
+    display: none;
     margin-left: 1rem;
-    width: 5rem;
-    height: 5rem;
-    background-image: url('images/navbar/dragonBoy.png');
+    min-width: 5rem;
+    min-height: 5rem;
+    background-image: url('images/navbar/DragonMale.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 50%;
     align-self: center;
 }
 
 .rightNavItem {
-    display:none;
-    margin-right: 1rem;
-    width: 5rem;
-    height: 5rem;
-    background-image: url('images/navbar/dragonGirl.png');
+    display: none;
+    margin-right: 2rem;
+    width: 6rem;
+    height: 6rem;
+    background-image: url('images/navbar/DragonFemale.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 50%;
     align-self: center;
 }
 

@@ -2,42 +2,53 @@
     margin: 0.5rem 1rem;
     display: flex;
     height: 5rem;
-    width: 12rem;
+    width: 5rem;
     flex-wrap: nowrap;
     justify-content: flex-start;
     border-radius: 0.1rem;
     border-bottom: 2px solid rgba(0, 0, 255, 0);
+    cursor:pointer;
+    user-select:none;
 }
-    .buttonContainer:hover {
-        border-radius: 0.5rem;
-        border-bottom: 2px solid blue;
-    }
+@media(min-width: 1400px){
+    .buttonContainer{height:5rem; width:12rem;}
+}
 
-.buttonImage{
+.buttonContainer:hover {
+    border-radius: 0.5rem;
+    border-bottom: 2px solid blue;
+    color:white;
+}
+
+.buttonContainer:hover .buttonDescripiton {
+    color: white;
+}
+
+.buttonImage {
     margin: 0 1rem;
-    align-self:center;
-    width:4rem;
-    height:4rem;
-    background-size:cover;
+    align-self: center;
+    width: 3rem;
+    height: 3rem;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position:center;
-    border-radius:50%;
+    background-position: center;
 }
 
 .buttonDescripiton {
+    display:none;
     font-size: 1.1rem;
-    font-weight:bold;
+    font-weight: bold;
     font-style: italic;
-    text-decoration:underline;
+    text-decoration: underline;
     color: rgba(255, 255, 255, 0.7);
-    align-self:center;
-    text-align:left;
-    align-content:center;
-    width:8rem;
+    align-self: center;
+    text-align: left;
+    align-content: center;
+    width: 8rem;
     height: 4rem;
 }
 
-.buttonDescripiton:hover {
-    color:white;
+@media(min-width: 1400px){
+    .buttonDescripiton{display:block;}
 }
 

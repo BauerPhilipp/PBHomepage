@@ -2,8 +2,8 @@
 
 @inject NavigationManager NavManager
 
-<div class="buttonContainer">
-    <div class="buttonImage" style="background-image:url(images/navbar/blenderLogoTest.png)"></div>
+<div class="buttonContainer" @onclick=OnNavButtonClicked>
+    <div class="buttonImage" style="background-image:url('@ImageLink')"></div>
     <div class="buttonDescripiton">@ButtonText</div>
 </div>
 
@@ -15,4 +15,10 @@
 
     [Parameter]
     public string NavigationLink { get; set; } = "/";
+
+    private void OnNavButtonClicked()
+    {
+        NavManager.NavigateTo(NavigationLink);
+    }
+
 }
