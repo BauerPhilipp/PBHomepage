@@ -1,0 +1,18 @@
+﻿
+@rendermode InteractiveServer
+@inject NavigationManager NavManager
+
+<div class="cardMainContainer" @onclick=@(() => NavManager.NavigateTo(PageLink))>
+    <img class="imageContainer" src="@ImageLink" alt="@ImageLink" />
+    <div class="imageText">@ImageText</div>
+</div>
+
+
+@code{
+    [Parameter]
+    public string ImageLink { get; set; } = string.Empty;
+    [Parameter]
+    public string ImageText { get; set; } = string.Empty;
+    [Parameter]
+    public string PageLink { get; set; } = "/";
+}
