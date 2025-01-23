@@ -1,0 +1,12 @@
+﻿.cardMainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 9rem;
+    width: 9rem;
+    border: 1px solid orange;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 1px rgba(255, 255, 255, 1);
+    background-size:cover;
+    background-repeat:no-repeat;
+}
