@@ -1,11 +1,23 @@
 ﻿@page "/"
 
+@inject ProjectDataContainer DataContainer
+
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+<h1 style="text-align:center">Alle Projekte</h1>
 
-Welcome to your new app.
+<div class="cardContainer">
+    @foreach (var data in DataContainer.CardsData)
+    {
+        <ProjectCardComponent ImageLink=@data.ImageLink ImageText=@data.ImageText PageLink=@data.PageLink></ProjectCardComponent>
+    }
+</div>
 
-<div>Zusatz</div>
 
-<ProjectCardComponent ImageLink="projects/printing/wacomholder/01.jpg" ImageText="favicon" PageLink="/PrintWacomStand"></ProjectCardComponent>
+@* <ProjectCardComponent ImageLink="projects/printing/wacomholder/01.jpg" ImageText="favicon" PageLink="/PrintWacomStand"></ProjectCardComponent> *@
+
+
+
+@code
+{
+}
