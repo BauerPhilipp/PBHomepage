@@ -1,10 +1,21 @@
 ﻿@page "/PrintProjects"
 
+@inject ProjectDataContainer DataContainer
+
 <PageTitle>3D-Print Projects</PageTitle>
 
-<h3>3DPrintProjects</h3>
-<div></div>
+<h1 style="text-align:center">3D-Durck Projekte</h1>
 
-@code {
+<div class="cardContainer">
+    @foreach (var data in DataContainer.CardsData)
+    {
+        if (data.ProjectType == ProjectType.Print)
+        {
+            <ProjectCardComponent ImageLink=@data.ImageLink ImageText=@data.ImageText PageLink=@data.PageLink></ProjectCardComponent>
+        }
+    }
+</div>
+
+@code{
 
 }

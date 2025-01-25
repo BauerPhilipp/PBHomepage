@@ -1,0 +1,23 @@
+﻿h3 {
+    text-align: center;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+div {
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+}
+
+img {
+    height: 15rem;
+    border-radius: 1rem;
+    margin: 2rem;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

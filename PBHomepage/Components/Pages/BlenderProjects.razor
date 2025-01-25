@@ -1,9 +1,22 @@
 ﻿@page "/BlenderProjects"
 
+@inject ProjectDataContainer DataContainer
+
 <PageTitle>Blender Projects</PageTitle>
 
-<h3>BlenderProjects</h3>
+<h1 style="text-align:center">Blender Projekte</h1>
 
-@code {
+<div class="cardContainer">
+    @foreach (var data in DataContainer.CardsData)
+    {
+        if(data.ProjectType == ProjectType.Blender)
+        {
+            <ProjectCardComponent ImageLink=@data.ImageLink ImageText=@data.ImageText PageLink=@data.PageLink></ProjectCardComponent>
+        }
+    }
+</div>
 
+
+@code
+{
 }
