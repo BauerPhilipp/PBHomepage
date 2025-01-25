@@ -7,8 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="wwwroot\Projects\Cooking\FiloStrudel\" />
     <Folder Include="wwwroot\Projects\CSharp\" />
-    <Folder Include="wwwroot\Projects\Cooking\" />
+    <Folder Include="wwwroot\Projects\Printing\Portafilter\" />
     <Folder Include="wwwroot\Projects\Unity\" />
     <Folder Include="wwwroot\Projects\Blender\" />
   </ItemGroup>
